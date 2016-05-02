@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Shadow Generator</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="main-heading">CSS Box Shadow Generator</h1>
+  </header>
+  <div class="container">
+    <div class="left-column">
+     <div class="colors">
+        <div class="shadow-color">
+          <p>Shadow Color</p>
+          <div class="colorInput">
+          <input id="shadow-color" type="color" value="#000000">
+            <p><input type="text" value="#000000" id="shadowHex" maxlength="7"></p>
+          </div>
+        </div>
+        <div class="bg-color">
+          <p>Background Color</p>
+          <div class="colorInput">
+            <input id="bg-color" type="color" value="#EBF0F6">
+            <p><input type="text" value="#f9f9f9" id="bgHex"maxlength="7"/></p>
+          </div>
+        </div>
+        <div class="button-color">
+          <p>Button Color</p>
+          <div class="colorInput">
+            <input id="button-color" type="color" value="#00b3ee">
+            <p><input type="text" value="#000000" id="buttHex" maxlength="7"/></p>
+          </div>
+        </div>
+        <div class="text-color">
+          <p>Text Color</p>
+          <div class="colorInput">
+            <input id="text-color" type="color" value="#ffffff">
+            <p><input type="text" id="textHex" maxlength="7" /></p>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-length">
+        <div class="label">
+          <p>Horizontal Length</p>
+          <p><input type="number" value="12" id="horizontalVal"> px</p>
+        </div>
+        <input id="horizontal" type="range" min="-200" max="200" value="0">
+      </div>
+      <div class="vertical-length">
+        <div class="label">
+          <p>Vertical Length</p>
+          <p><input type="number" value="12" id="verticalVal"> px</p>
+        </div>
+        <input id="vertical" type="range" min="-200" max="200" value="10">
+      </div>
+       <div class="blur-radius">
+        <div class="label">
+          <p>Blur Radius</p>
+          <p><input type="number" value="12" id="blurRadius"> px</p>
+        </div>
+        <input id="blur" type="range" min="0" max="100" value="10">
+      </div>
+       <div class="spread-radius">
+        <div class="label">
+          <p>Spread Radius</p>
+          <p><input type="number" value="12" id="spreadRadius"> px</p>
+        </div>
+        <input id="spread" type="range" min="-50" max="50" value="-5">
+      </div>
+      <div class="opacity">
+        <div class="label">
+          <p>Opacity</p>
+          <p><input type="number" value="1" id="opacityVal"></p>
+        </div>
+        <input id="opacity" type="range" max="1" min="0" step=".010" value="0.5">
+      </div>
+      <div class="inset">
+        <div class="insetInput">
+          <p class="inset">Inset</p>
+          <input id="inset" value="inset" type="checkbox">
+        </div>
+      </div>
+    </div>
+    <div class="right-column">
+      <button class="button">Button</button>
+      <pre><code>
+      </code></pre>
+    </div>
+  </div>
+  <script src="js/app.min.js"></script>
+</body>
+</html>
